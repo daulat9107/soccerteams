@@ -61,7 +61,7 @@ exit
 
 php artisan passport:install
 
-Output of the this command  
+**Output of the this command**
 
 Client ID: 1
 Client Secret: 9p5hhNpL3sra28PMPcEi0AYns0llpYvuWofm7YSm
@@ -71,7 +71,15 @@ Client Secret: XzE8Zh8PqbgPlbaG4LfhnqDA2njZbmm8kMQOP244
 
 Now use Password grant client
 
-for login As admin
+**For login As admin demo username & password ** 
+{
+	"grant_type":"password",
+	"client_id":2,
+	"client_secret":"XzE8Zh8PqbgPlbaG4LfhnqDA2njZbmm8kMQOP244",
+	"username":"admin@soccerteam.com",
+	"password":"pass123",
+	"scope":"*"
+}
 
 ## Step 6
 **Inside of your project root dir run following commands:**
