@@ -71,7 +71,8 @@ Client Secret: XzE8Zh8PqbgPlbaG4LfhnqDA2njZbmm8kMQOP244
 
 Now use Password grant client
 
-**For login As admin demo username & password ** 
+**For login As admin demo username & password** 
+
 {
 	"grant_type":"password",
 	"client_id":2,
