@@ -17,7 +17,16 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/has-roles', function (Request $request) {
     $user=$request->user();
 
-    return $user->hasRole('admin');
+    if($user->hasRole('admin','super admin')){
+        return ['true'];
+    }
+     return ['false'];
+});
+Route::middleware('auth:api')->get('/has-permissions', function (Request $request) {
+    $user=$request->user();
+
+    return[$user->can('add team')];
+
 });
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {

@@ -28,6 +28,11 @@ class TeamController extends Controller
      */
     public function store(StoreTeamRequest $request)
     {
+        $user=$request->user();
+
+        if(!$user->can('add team')){
+            abort(403,'unauthorized');
+        }
         $team = new Team;
         $team->user()->associate($request->user());
         $team->name=$request->name;
@@ -49,7 +54,7 @@ class TeamController extends Controller
 
            return new TeamCollection(Team::where('id',$request->id)->with(['players'])->paginate(3));
         }else{
-            return new TeamCollection(Team::where('name','like','%'.$request->name,'%')->with(['players'])->paginate(3));
+            return new TeamCollection(Team::where('name','like','%'.$request->name.'%')->with(['players'])->paginate(3));
         }
 
     }
@@ -76,7 +81,12 @@ class TeamController extends Controller
      */
     public function update(StoreTeamRequest $request, $id)
     {
-        $team = Team::find($id);
+        $user=$request->user();
+
+        if(!$user->can('update team')){
+            abort(403,'unauthorized');
+        }
+        $team = Team::findOrFail($id);
         $team->user()->associate($request->user());
         $team->name=$request->name;
         $team->logo_uri=$request->logo_uri;
@@ -92,7 +102,12 @@ class TeamController extends Controller
      */
     public function destroy($id)
     {
-      Team::find($id)->delete();
+        $user=auth('api')->user();
+
+        if(!$user->can('delete team')){
+            abort(403,'unauthorized');
+        }
+      Team::findOrFail($id)->delete();
       return new TeamCollection(Team::with(['user','players','players.user'])->paginate(3));
     }
 }

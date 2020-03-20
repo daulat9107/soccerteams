@@ -7,6 +7,7 @@ use App\Http\Resources\PlayerCollection;
 use App\Http\Resources\PlayerResource;
 use App\Http\Requests\StorePlayerRequest;
 use App\Player;
+use App\Team;
 
 class PlayerController extends Controller
 {
@@ -28,6 +29,11 @@ class PlayerController extends Controller
      */
     public function store(StorePlayerRequest $request)
     {
+        $user=auth('api')->user();
+
+        if(!$user->can('add player')){
+            abort(403,'unauthorized');
+        }
         $player = new Player;
          $this->playerData($player,$request);
         return new PlayerResource($player);
@@ -70,7 +76,12 @@ class PlayerController extends Controller
      */
     public function update(StorePlayerRequest $request, $id)
     {
-        $player = Player::find($id);
+        $user=auth('api')->user();
+
+        if(!$user->can('update player')){
+            abort(403,'unauthorized');
+        }
+        $player = Player::findOrFail($id);
         $this->playerData($player,$request);
         return new PlayerResource($player);
     }
@@ -81,7 +92,8 @@ class PlayerController extends Controller
      * @return [type]          [description]
      */
     public function playerData(Player $player,StorePlayerRequest $request){
-        $player->team_id=$request->team_id;
+        $team=Team::findOrFail($request->team_id);
+        $player->team_id=$team->id;
         $player->user()->associate($request->user());
         $player->first_name=$request->first_name;
         $player->last_name=$request->last_name;
@@ -97,7 +109,12 @@ class PlayerController extends Controller
      */
     public function destroy($id)
     {
-          Player::find($id)->delete();
+        $user=auth('api')->user();
+
+        if(!$user->can('update player')){
+            abort(403,'unauthorized');
+        }
+          Player::findOrFail($id)->delete();
           return $this->index();
     }
 }
