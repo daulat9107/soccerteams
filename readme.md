@@ -10,7 +10,7 @@ git clone https://github.com/daulat9107/soccerteams.git
 cd soccerteams
 
 ## Step 3
-Inside of your project root dir run following commands:
+**Inside of your project root dir run following commands:**
 
 cp .env.example .env
 
@@ -32,7 +32,7 @@ DB_USERNAME=homestead
 DB_PASSWORD=secret
 
 ## Step 4
-Inside of your project root dir run following commands:
+**Inside of your project root dir run following commands:**
 
 composer install
 
@@ -57,7 +57,7 @@ factory(App\Player::class,10)->create(['team_id'=>3]);
 exit
 
 ## Step 5
-Inside of your project root dir run following commands:
+**Inside of your project root dir run following commands:**
 
 php artisan passport:install
 
@@ -74,13 +74,13 @@ Now use Password grant client
 for login As admin
 
 ## Step 6
-Inside of your project root dir run following commands:
+**Inside of your project root dir run following commands:**
 
 phpunit
 
 ## Step 7
 
-Open postman or any other api client 
+**Open postman or any other api client **
 
 
 //Login
@@ -118,7 +118,7 @@ Postman-Token: 1f606a38-6998-fbf2-c987-2966100fa305
 
 {
 	"name":"daulat",
-	"email":"djwadh910@gmail.com",
+	"email":"daulat@gmail.com",
 	"password":"pass123"
 } 
 
