@@ -24,7 +24,7 @@ DB_USERNAME=homestead
 DB_PASSWORD=secret
 
 ## Step 4
-In your project root dir
+--In your project root dir run following commands:
 
 composer install
 
