@@ -85,7 +85,7 @@ Now use Password grant client
 ## Step 6
 **Inside of your project root dir run following commands:**
 
-phpunit
+phpunit or vendor/bin/phpunit
 
 ## Step 7
 
