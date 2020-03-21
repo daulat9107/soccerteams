@@ -39,33 +39,6 @@ class TeamResourceTest extends TestCase
        $this->assertInstanceOf(UserResource::class,$resource['user']);
 
     }
-    /**
-     * Show Secret if User is admin
-     *
-     * @return void
-     */
-    public function test_show_secret_if_user_is_admin()
-    {
-        $resource = (new TeamResource($team = factory(Team::class)->create([
-            'user_id'=>1
-        ])))->jsonSerialize();
-      $this->assertArraySubset([
-        'secret' =>'abc'
-      ],$resource);
 
-    }
-    /**
-     * Does not show Secret if User is admin
-     *
-     * @return void
-     */
-    public function test_does_not_show_secret_if_user_is_not_admin()
-    {
-        $resource = (new TeamResource($team = factory(Team::class)->create([
-            'user_id'=>2
-        ])))->jsonSerialize();
-      $this->assertArrayNotHasKey('secret',$resource);
-
-    }
 
 }
