@@ -95,7 +95,7 @@ phpunit or vendor/bin/phpunit
 
 ## Step 7
 
-**Open postman or any other api client **
+**Open postman or any other api client**
 
 
 //Login
