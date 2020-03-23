@@ -204,6 +204,43 @@ User and Team (one to Many)
 Team and Player (one to Many)
 
 
+**Database Migrations in**
+
+app/database/migrations
+
+**Database Seeds in**
+
+app/database/seeds/DatabaseSeeder.php
+
+app/database/seeds/PermissionTableSeeder.php
+
+app/database/seeds/RolePermissionsTableSeeder.php
+
+app/database/seeds/RoleTableSeeder.php
+
+app/database/seeds/UserRoleTableSeeder.php
+
+app/database/seeds/UsersTableSeeder.php
+
+**Database Factories for generation fake data in db**
+
+app/database/factories/PlayerFactory.php
+
+app/database/factories/TeamFactory.php
+
+app/database/factories/UserFactory.php
+
+**Unit testing classes**
+
+app/tests/TeamModelTest.php
+
+app/tests/TeamResourceTest.php
+
+app/tests/UserModelTest.php
+
+
+
+
 
 
 
