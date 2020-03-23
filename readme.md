@@ -194,9 +194,13 @@ app/Permission.php
 **Relationship between models**
 
 User and Role (Many to Many)
+
 User and Permission (Many to Many)
+
 Role and Permission (Many to Many)
+
 User and Team (one to Many)
+
 Team and Player (one to Many)
 
 
