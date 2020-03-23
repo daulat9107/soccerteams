@@ -77,7 +77,7 @@ Client Secret: XzE8Zh8PqbgPlbaG4LfhnqDA2njZbmm8kMQOP244
 Now use Password grant client
 
 **For login As admin demo username & password** 
-
+```json
 {
 	"grant_type":"password",
 	"client_id":2,
@@ -86,6 +86,7 @@ Now use Password grant client
 	"password":"pass123",
 	"scope":"*"
 }
+```
 
 ## Step 6
 **Inside of your project root dir run following commands:**
@@ -98,7 +99,7 @@ phpunit or vendor/bin/phpunit
 
 
 //Login
-
+```json
 POST /oauth/token HTTP/1.1
 URl: http://yourdomain.com/oauth/token
 Accept: application/json
@@ -135,7 +136,7 @@ Postman-Token: 1f606a38-6998-fbf2-c987-2966100fa305
 	"email":"daulat@gmail.com",
 	"password":"pass123"
 } 
-
+```
 
 ## Step 8
 **You can find all routes in**
