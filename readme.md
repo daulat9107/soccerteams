@@ -1,4 +1,4 @@
-<p align="center">Soccer team project</p>
+# <p align="center">Soccer team project</p>
 
 
 
@@ -151,7 +151,7 @@ Postman-Token: 1f606a38-6998-fbf2-c987-2966100fa305
 * **Team Add**
 ```
 POST /api/teams HTTP/1.1
-URL: http://soccerteams.test:8000/api/teams
+URL: http://yourdomain.com/api/teams
 Accept: application/json
 Content-Type: application/json
 Authorization: Bearer your authrization token(access token)
@@ -166,7 +166,7 @@ Postman-Token: 01d505b0-d621-add2-c14a-e3d0f897b5c4
 * **Team Update**
 ```
 PUT /api/teams/1 HTTP/1.1
-URL: http://soccerteams.test:8000/api/teams/1
+URL: http://yourdomain.com/api/teams/1
 Accept: application/json
 Content-Type: application/json
 Authorization: Bearer your authrization token(access token)
@@ -181,7 +181,7 @@ Postman-Token: 49fa2e77-b54a-e847-d610-7f41bac78e89
 * **Team Delete**
 ```
 DELETE /api/teams/11 HTTP/1.1
-URL: http://soccerteams.test:8000/api/teams/11
+URL: http://yourdomain.com/api/teams/11
 Accept: application/json
 Content-Type: application/json
 Authorization: Bearer 
@@ -191,7 +191,7 @@ Postman-Token: ea98dee7-fb49-2d7f-0923-b6691d842de4
 * **Team List without login**
 ```
 GET /api/teams HTTP/1.1
-URL: http://soccerteams.test:8000/api/teams
+URL: http://yourdomain.com/api/teams
 Accept: application/json
 Content-Type: application/json
 Cache-Control: no-cache
