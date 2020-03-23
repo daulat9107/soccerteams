@@ -30,11 +30,11 @@ DB_HOST=127.0.0.1
 
 DB_PORT=3306
 
-DB_DATABASE=soccerteams
+DB_DATABASE=soccerteams (set your db name)
 
-DB_USERNAME=homestead
+DB_USERNAME=homestead (set your db usename)
 
-DB_PASSWORD=secret
+DB_PASSWORD=secret (set your db password)
 
 ## Step 4
 **Inside of your project root dir run following commands:**
