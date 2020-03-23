@@ -166,9 +166,40 @@ app/Permissions/HasPermissionsTrait.php
 
 app/Providers/PermissionServiceProvider.php
 
-**You can find Provider for permission in**
+**You can find Provider for Passports routes registration in boot method in**
 
-app/Providers/PermissionServiceProvider.php
+app/Providers/AuthServiceProvider.php
+
+
+**You can find passport driver registration in**
+
+app/config/auth.php
+
+
+**You can find PermissionServiceProvider and Laravel Passport registration in**
+
+app/config/app.php
+
+Laravel\Passport\PassportServiceProvider::class,
+
+App\Providers\PermissionServiceProvider::class,
+
+**You can find all models in**
+app/User.php
+app/Role.php
+app/Team.php
+app/Player.php
+app/Permission.php
+
+**Relationship between models**
+
+User and Role (Many to Many)
+User and Permission (Many to Many)
+Role and Permission (Many to Many)
+User and Team (one to Many)
+Team and Player (one to Many)
+
+
 
 
 
