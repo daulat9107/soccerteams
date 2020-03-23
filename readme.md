@@ -148,7 +148,56 @@ Postman-Token: 1f606a38-6998-fbf2-c987-2966100fa305
 	"password":"pass123"
 } 
 ```
+* **Team Add**
+```
+POST /api/teams HTTP/1.1
+URL: http://soccerteams.test:8000/api/teams
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer your authrization token(access token)
+Cache-Control: no-cache
+Postman-Token: 01d505b0-d621-add2-c14a-e3d0f897b5c4
 
+{
+	"name":"xyz",
+	"logo_uri":"uri"
+}
+```
+* **Team Update**
+```
+PUT /api/teams/1 HTTP/1.1
+URL: http://soccerteams.test:8000/api/teams/1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer your authrization token(access token)
+Cache-Control: no-cache
+Postman-Token: 49fa2e77-b54a-e847-d610-7f41bac78e89
+
+{
+	"name":"ppp",
+	"logo_uri":"uri"
+}
+```
+* **Team Delete**
+```
+DELETE /api/teams/11 HTTP/1.1
+URL: http://soccerteams.test:8000/api/teams/11
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 
+Cache-Control: no-cache
+Postman-Token: ea98dee7-fb49-2d7f-0923-b6691d842de4
+```
+* **Team List without login**
+```
+GET /api/teams HTTP/1.1
+URL: http://soccerteams.test:8000/api/teams
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: 622bde15-48de-1a52-7c05-6aabbfac9f27
+
+```
 ## Step 8
 **You can find all routes in**
 
