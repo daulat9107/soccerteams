@@ -7,15 +7,19 @@
 git clone https://github.com/daulat9107/soccerteams.git
 
 ## Step 2
+```
 cd soccerteams
+```
 
 ## Step 3
 **Inside of your project root dir run following commands:**
-
+```
 cp .env.example .env
+```
 
 **Inside your .env file set**
 
+```
 APP_ENV=production
 
 APP_DEBUG=false
@@ -25,16 +29,12 @@ from line 9 to 14 Provide database connection details
 
 
 DB_CONNECTION=mysql
-
 DB_HOST=127.0.0.1
-
 DB_PORT=3306
-
 DB_DATABASE=soccerteams (set your db name)
-
 DB_USERNAME=homestead (set your db usename)
-
 DB_PASSWORD=secret (set your db password)
+```
 
 ## Step 4
 **Inside of your project root dir run following commands:**
