@@ -333,6 +333,20 @@ Postman-Token: 9074611a-3236-79e4-8a70-a554eab2289f
 **You can find passport driver registration in**
 
 * app/config/auth.php
+```
+    'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
+        'api' => [
+            'driver' => 'passport', //driver passport registration
+            'provider' => 'users',
+        ],
+    ],
+
+```
 
 
 **You can find PermissionServiceProvider and Laravel Passport registration in**
