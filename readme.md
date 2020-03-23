@@ -25,7 +25,7 @@ APP_ENV=production
 APP_DEBUG=false
 
 
-from line 9 to 14 Provide database connection details
+#From line 9 to 14 Provide database connection details
 
 
 DB_CONNECTION=mysql
@@ -38,7 +38,7 @@ DB_PASSWORD=secret (set your db password)
 
 ## Step 4
 **Inside of your project root dir run following commands:**
-
+```
 composer install
 
 php artisan migrate
@@ -48,6 +48,7 @@ php artisan key:generate
 php artisan db:seed
 
 php artisan tinker
+# inside tinker run
 
 factory(App\User::class,5)->create();
 
@@ -59,22 +60,28 @@ factory(App\Player::class,10)->create(['team_id'=>2]);
 
 factory(App\Player::class,10)->create(['team_id'=>3]);
 
+# exit from tinker
+
 exit
+```
 
 ## Step 5
 **Inside of your project root dir run following commands:**
-
+```
 php artisan passport:install
+```
 
 **Output of the this command**
 
+```
 Client ID: 1
 Client Secret: 9p5hhNpL3sra28PMPcEi0AYns0llpYvuWofm7YSm
 Password grant client created successfully.
 Client ID: 2
 Client Secret: XzE8Zh8PqbgPlbaG4LfhnqDA2njZbmm8kMQOP244
+```
 
-Now use Password grant client
+**Now use Password grant client**
 
 **For login As admin demo username & password** 
 ```json
@@ -90,8 +97,9 @@ Now use Password grant client
 
 ## Step 6
 **Inside of your project root dir run following commands:**
-
+```
 phpunit or vendor/bin/phpunit
+```
 
 ## Step 7
 
