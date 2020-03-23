@@ -3,8 +3,9 @@
 
 
 ## Step 1
-
+```
 git clone https://github.com/daulat9107/soccerteams.git
+```
 
 ## Step 2
 ```
