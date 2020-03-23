@@ -133,24 +133,24 @@ Postman-Token: 1f606a38-6998-fbf2-c987-2966100fa305
 
 
 ## Step 8
-**You can finde all routes in**
+**You can find all routes in**
 
 app/routes/api.php
 
 ## Step 9
-**You can finde all Controllers in**
+**You can find all Controllers in**
 app/Http/Controllers/RegisterController.php
 app/Http/Controllers/TeamController.php
 app/Http/Controllers/PlayerController.php
 
 ## Step 10
-**You can finde all Validation classes in**
+**You can find all Validation classes in**
 
 app/Http/Requests/StorePlayerRequest.php
 app/Http/Requests/StoreTeamRequest.php
 app/Http/Requests/StoreUserRequest.php
 
-**You can finde all Api Resources classes in**
+**You can find all Api Resources classes in**
 
 app/Http/Resources/PlayerCollection.php
 app/Http/Resources/PlayerResource.php
@@ -158,12 +158,17 @@ app/Http/Resources/TeamCollection.php
 app/Http/Resources/TeamResource.php
 app/Http/Resources/UserResource.php
 
-**You can finde Permission trait for user in**
+**You can find Permission trait for user in**
+
 app/Permissions/HasPermissionsTrait.php
 
-**You can finde Provider for permission in**
+**You can find Provider for permission in**
+
 app/Providers/PermissionServiceProvider.php
 
+**You can find Provider for permission in**
+
+app/Providers/PermissionServiceProvider.php
 
 
 
