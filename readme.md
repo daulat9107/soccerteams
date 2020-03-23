@@ -14,8 +14,13 @@ cd soccerteams
 
 cp .env.example .env
 
+**Inside your .env file set**
 
-Inside .env file 
+APP_ENV=production
+
+APP_DEBUG=false
+
+
 from line 9 to 14 Provide database connection details
 
 
@@ -95,7 +100,7 @@ phpunit or vendor/bin/phpunit
 //Login
 
 POST /oauth/token HTTP/1.1
-URl: http://soccerteams.test:8000/oauth/token
+URl: http://yourdomain.com/oauth/token
 Accept: application/json
 Content-Type: application/json
 Cache-Control: no-cache
@@ -119,7 +124,7 @@ Response
 //Register
 
 POST /api/register HTTP/1.1
-URL: http://soccerteams.test:8000/api/register
+URL: http://yourdomain.com/api/register
 Accept: application/json
 Content-Type: application/json
 Cache-Control: no-cache
