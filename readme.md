@@ -107,7 +107,7 @@ phpunit or vendor/bin/phpunit
 **Open postman or any other api client**
 
 
-* **Login
+* **Login**
 
 ```json
 POST /oauth/token HTTP/1.1
@@ -133,7 +133,7 @@ Response
     "refresh_token": "def502007a573c968b73bb5439741aaa06933d2201f46f3aef13fb4efa6e821e252073cfc3094be0ea4f9053b7de5b1fccfd7e54a9f9d3e86194ff63ebb46ba38a3053ac3e869b82ef7bd0c4dabeeab602fcbdd02a587a05a5f062314900ef7353411435fb54a0dcb728fa5b9d4db5213b8a5c8130c77685fb8669ac53bb86331241d46b68da2111fe12118b7312a3ab37fa51e7bd44fff22d32233d73bb16fefce6b98532af70accf0adc2cb5ac805a94a96578f4f491b7670e47e97b83ad21ba3d85dcbafd9715af6cc07794fb628829e5fa6c3c9e23f916c3724bde8fa456eaf3628f2ad76078aaf5e6dbb63e30394c8a70ea0226f4c073921ddbdee4f2347dbf6ad8fc085c8672058bf73db759ac027b8c77a57f8f1a8c0d68fe7fb1a845448ad97c3668546502bd808a7a4d7cccf174909f3632e0c585a83160c08a90e3675df8cfa6afe5895dfa57b6b044dbb5555793f1bd00861570f18ff5d17c1591b3b0c711"
 }
 ```
-* **Register
+* **Register**
 ```
 POST /api/register HTTP/1.1
 URL: http://yourdomain.com/api/register
