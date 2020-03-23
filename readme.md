@@ -297,7 +297,6 @@ Postman-Token: 9074611a-3236-79e4-8a70-a554eab2289f
 
 * app/routes/api.php
 
-## Step 9
 **You can find all Controllers in**
 
 * app/Http/Controllers/RegisterController.php
