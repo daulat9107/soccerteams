@@ -150,121 +150,96 @@ Postman-Token: 1f606a38-6998-fbf2-c987-2966100fa305
 ## Step 8
 **You can find all routes in**
 
-app/routes/api.php
+* app/routes/api.php
 
 ## Step 9
 **You can find all Controllers in**
 
-app/Http/Controllers/RegisterController.php
-
-app/Http/Controllers/TeamController.php
-
-app/Http/Controllers/PlayerController.php
+* app/Http/Controllers/RegisterController.php
+* app/Http/Controllers/TeamController.php
+* app/Http/Controllers/PlayerController.php
 
 **You can find all Validation classes in**
 
-app/Http/Requests/StorePlayerRequest.php
-
-app/Http/Requests/StoreTeamRequest.php
-
-app/Http/Requests/StoreUserRequest.php
+* app/Http/Requests/StorePlayerRequest.php
+* app/Http/Requests/StoreTeamRequest.php
+* app/Http/Requests/StoreUserRequest.php
 
 **You can find all Api Resources classes in**
 
-app/Http/Resources/PlayerCollection.php
-
-app/Http/Resources/PlayerResource.php
-
-app/Http/Resources/TeamCollection.php
-
-app/Http/Resources/TeamResource.php
-
-app/Http/Resources/UserResource.php
+* app/Http/Resources/PlayerCollection.php
+* app/Http/Resources/PlayerResource.php
+* app/Http/Resources/TeamCollection.php
+* app/Http/Resources/TeamResource.php
+* app/Http/Resources/UserResource.php
 
 **You can find Permission trait for user in**
 
-app/Permissions/HasPermissionsTrait.php
+* app/Permissions/HasPermissionsTrait.php
 
 **You can find Provider for permission in**
 
-app/Providers/PermissionServiceProvider.php
+* app/Providers/PermissionServiceProvider.php
 
 **You can find Provider for Passports routes registration in boot method in**
 
-app/Providers/AuthServiceProvider.php
+* app/Providers/AuthServiceProvider.php
 
 
 **You can find passport driver registration in**
 
-app/config/auth.php
+* app/config/auth.php
 
 
 **You can find PermissionServiceProvider and Laravel Passport registration in**
 
-app/config/app.php
-
+* app/config/app.php
+```
 Laravel\Passport\PassportServiceProvider::class,
 
 App\Providers\PermissionServiceProvider::class,
+```
 
 **You can find all models in**
 
-app/User.php
-
-app/Role.php
-
-app/Team.php
-
-app/Player.php
-
-app/Permission.php
+* app/User.php
+* app/Role.php
+* app/Team.php
+* app/Player.php
+* app/Permission.php
 
 **Relationship between models**
 
-User and Role (Many to Many)
-
-User and Permission (Many to Many)
-
-Role and Permission (Many to Many)
-
-User and Team (one to Many)
-
-Team and Player (one to Many)
-
+* User and Role (Many to Many)
+* User and Permission (Many to Many)
+* Role and Permission (Many to Many)
+* User and Team (one to Many)
+* Team and Player (one to Many)
 
 **Database Migrations in**
 
-app/database/migrations
+* app/database/migrations
 
 **Database Seeds in**
 
-app/database/seeds/DatabaseSeeder.php
-
-app/database/seeds/PermissionTableSeeder.php
-
-app/database/seeds/RolePermissionsTableSeeder.php
-
-app/database/seeds/RoleTableSeeder.php
-
-app/database/seeds/UserRoleTableSeeder.php
-
-app/database/seeds/UsersTableSeeder.php
+* app/database/seeds/DatabaseSeeder.php
+* app/database/seeds/PermissionTableSeeder.php
+* app/database/seeds/RolePermissionsTableSeeder.php
+* app/database/seeds/RoleTableSeeder.php
+* app/database/seeds/UserRoleTableSeeder.php
+* app/database/seeds/UsersTableSeeder.php
 
 **Database Factories for generating fake data in db**
 
-app/database/factories/PlayerFactory.php
-
-app/database/factories/TeamFactory.php
-
-app/database/factories/UserFactory.php
+* app/database/factories/PlayerFactory.php
+* app/database/factories/TeamFactory.php
+* app/database/factories/UserFactory.php
 
 **Unit testing classes**
 
-app/tests/TeamModelTest.php
-
-app/tests/TeamResourceTest.php
-
-app/tests/UserModelTest.php
+* app/tests/TeamModelTest.php
+* app/tests/TeamResourceTest.php
+* app/tests/UserModelTest.php
 
 
 
