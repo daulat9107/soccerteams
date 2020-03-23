@@ -196,6 +196,25 @@ Accept: application/json
 Content-Type: application/json
 Cache-Control: no-cache
 Postman-Token: 622bde15-48de-1a52-7c05-6aabbfac9f27
+```
+* **Team Show Without login**
+```
+GET /api/teams/16 HTTP/1.1
+URL: http://yourdomain.com/api/teams/16
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: c20246f3-d1e6-2c30-8c51-7ddc06bee1db
+
+```
+* **Search Team Using id or name**
+```
+GET /api/teams/search HTTP/1.1
+URL: http://yourdomain.com/api/teams/search or http://yourdomain.com/api/teams/search?id=1 or http://yourdomain.com/api/teams/search?name=xyz
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: 42a41606-bd19-8eac-0fae-5039dd179a2b
 
 ```
 ## Step 8
