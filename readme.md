@@ -241,7 +241,7 @@ app/database/seeds/UserRoleTableSeeder.php
 
 app/database/seeds/UsersTableSeeder.php
 
-**Database Factories for generation fake data in db**
+**Database Factories for generating fake data in db**
 
 app/database/factories/PlayerFactory.php
 
