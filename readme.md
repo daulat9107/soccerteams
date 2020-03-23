@@ -193,10 +193,15 @@ Laravel\Passport\PassportServiceProvider::class,
 App\Providers\PermissionServiceProvider::class,
 
 **You can find all models in**
+
 app/User.php
+
 app/Role.php
+
 app/Team.php
+
 app/Player.php
+
 app/Permission.php
 
 **Relationship between models**
