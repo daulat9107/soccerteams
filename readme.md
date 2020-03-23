@@ -207,7 +207,7 @@ Cache-Control: no-cache
 Postman-Token: c20246f3-d1e6-2c30-8c51-7ddc06bee1db
 
 ```
-* **Search Team Using id or name**
+* **Search Team Using id or name without login**
 ```
 GET /api/teams/search HTTP/1.1
 URL: http://yourdomain.com/api/teams/search or http://yourdomain.com/api/teams/search?id=1 or http://yourdomain.com/api/teams/search?name=xyz
@@ -215,6 +215,81 @@ Accept: application/json
 Content-Type: application/json
 Cache-Control: no-cache
 Postman-Token: 42a41606-bd19-8eac-0fae-5039dd179a2b
+
+```
+* **Player List Without Login**
+```
+GET /api/players HTTP/1.1
+URL: http://yourdomain.com/api/players
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: 1603c2bd-9dbd-9372-ca9b-3ebe502e6a04
+
+```
+* **Add Player**
+```
+POST /api/players HTTP/1.1
+URL: http://yourdomain.com/api/players
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer your authrization token(access token)
+Cache-Control: no-cache
+Postman-Token: 2438600f-8e39-bfd7-d1c8-921c372f68e7
+
+{
+	"team_id":1,
+	"first_name":"daulat",
+	"last_name":"wadhwani",
+	"player_image_uri":"uri"
+}
+```
+* **Update Player**
+```
+PUT /api/players/8 HTTP/1.1
+URL: http://yourdomain.com/api/players/8
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer access token
+Cache-Control: no-cache
+Postman-Token: e0a8fd02-112c-a0b4-791d-4ec8940776a6
+
+{
+	"team_id":15,
+	"first_name":"daulat",
+	"last_name":"wadhwani",
+	"player_image_uri":"uri"
+}
+```
+* **Delete Player**
+```
+DELETE /api/players/8 HTTP/1.1
+Host: http://yourdomain.com/api/players/8
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer Your access token
+Cache-Control: no-cache
+Postman-Token: 8798999a-b041-45b0-d0db-c25cd856ce80
+
+```
+* **Show Player without login**
+```
+GET /api/players/5 HTTP/1.1
+URL: http://yourdomain.com/api/players/5
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: 0bb386c8-4cb5-6ad5-58fe-a74c55bec9c1
+
+```
+* **Search Players without login using id or name**
+```
+GET /api/players/search HTTP/1.1
+URL: http://yourdomain.com/api/players/search or http://yourdomain.com/api/players/search?id=1 *  http://yourdomain.com/api/players/search?name=yyy
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: 9074611a-3236-79e4-8a70-a554eab2289f
 
 ```
 ## Step 8
